@@ -34,11 +34,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   margin-top: 0;
-  margin-bottom: 1em;
-}
-
-.demo {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 #app {
@@ -46,7 +42,10 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: #eee;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  background: #212121;
 }
 
 button {
@@ -78,5 +77,8 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+  #app {
+    background: #eee;
   }
 }

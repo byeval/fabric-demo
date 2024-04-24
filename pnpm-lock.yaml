@@ -13,9 +13,6 @@ devDependencies:
   '@types/fabric':
     specifier: ^5.3.7
     version: 5.3.7
-  typescript:
-    specifier: ^5.2.2
-    version: 5.2.2
   vite:
     specifier: ^5.2.0
     version: 5.2.0
@@ -1316,12 +1313,6 @@ packages:
       punycode: 2.3.1
     dev: false
     optional: true
-
-  /typescript@5.2.2:
-    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-    dev: true
 
   /universalify@0.2.0:
     resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}

@@ -1,9 +1,6 @@
 import { fabric } from "fabric";
 import { adjustFontSize } from "./utils";
 
-fabric.Object.prototype.originX = fabric.Object.prototype.originY = "center";
-fabric.Object.prototype.objectCaching = true;
-
 export function freeDrawPathText(app) {
   const canvas = new fabric.Canvas(app, {
     backgroundColor: "#fff",

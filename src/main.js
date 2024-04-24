@@ -1,9 +1,16 @@
 import "./style.css";
+import "./demos/preset";
 import { freeDrawPathText } from "./demos/free-draw-path-text";
 import { TextAlignSvgPath } from "./demos/text-align-svg-path";
 import { GradientText } from "./demos/gradient-text";
+import { loadPolygon } from "./demos/load-polygon";
 
-const demos = ["Free draw path text", "Text align svg path", "Gradient text"];
+const demos = [
+  "Free draw path text",
+  "Text align svg path",
+  "Gradient text",
+  "Load polygon",
+];
 
 document.querySelector("#app").innerHTML = `${demos
   .map((text, index) => {
@@ -12,9 +19,11 @@ document.querySelector("#app").innerHTML = `${demos
   .join("")}`;
 
 function setup() {
-  [freeDrawPathText, TextAlignSvgPath, GradientText].map((fn, index) => {
-    fn(document.querySelector(`#demo-${index}`));
-  });
+  [freeDrawPathText, TextAlignSvgPath, GradientText, loadPolygon].map(
+    (fn, index) => {
+      fn(document.querySelector(`#demo-${index}`));
+    }
+  );
 }
 
 setup();

@@ -1,10 +1,6 @@
 import { fabric } from "fabric";
 
-fabric.Object.prototype.originX = fabric.Object.prototype.originY = "center";
-fabric.Object.prototype.objectCaching = true;
-
 export function GradientText(app) {
-  fabric.Object.prototype.objectCaching = true;
   const canvas = new fabric.Canvas(app, {
     backgroundColor: "#fff",
   });
