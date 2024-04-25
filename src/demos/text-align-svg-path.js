@@ -18,13 +18,13 @@ export function TextAlignSvgPath(app) {
       //   path.scaleToWidth(600);
       //   path.setCoords();
       const matrix = path.calcTransformMatrix();
-      //   console.log(fabric.util.transformPoint(P, path.calcTransformMatrix()));
-      console.log(path, matrix, objects);
-      console.log(fabric.util);
+      // console.log(fabric.util.transformPoint(P, path.calcTransformMatrix()));
+      // console.log(path, matrix, objects);
+      // console.log(fabric.util);
       const pathInfo = fabric.util
         .getPathSegmentsInfo(path.path)
         .map((item) => fabric.util.transformPoint(item, matrix));
-      console.log(pathInfo, matrix);
+      // console.log(pathInfo, matrix);
       path.segmentsInfo = pathInfo;
       const pathLength = pathInfo[pathInfo.length - 1].length;
       const content = "测试文字，包含 English，会根据路径长度自动缩小字号";

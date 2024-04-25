@@ -4,12 +4,16 @@ import { freeDrawPathText } from "./demos/free-draw-path-text";
 import { TextAlignSvgPath } from "./demos/text-align-svg-path";
 import { GradientText } from "./demos/gradient-text";
 import { loadPolygon } from "./demos/load-polygon";
+import { drawRectangle } from "./demos/draw-rectangle";
+import { drawCircle } from "./demos/draw-circle";
 
 const demos = [
   "Free draw path text",
   "Text align svg path",
   "Gradient text",
   "Load polygon",
+  "Draw rectangle",
+  "Draw circle",
 ];
 
 document.querySelector("#app").innerHTML = `${demos
@@ -19,11 +23,16 @@ document.querySelector("#app").innerHTML = `${demos
   .join("")}`;
 
 function setup() {
-  [freeDrawPathText, TextAlignSvgPath, GradientText, loadPolygon].map(
-    (fn, index) => {
-      fn(document.querySelector(`#demo-${index}`));
-    }
-  );
+  [
+    freeDrawPathText,
+    TextAlignSvgPath,
+    GradientText,
+    loadPolygon,
+    drawRectangle,
+    drawCircle,
+  ].map((fn, index) => {
+    fn(document.querySelector(`#demo-${index}`));
+  });
 }
 
 setup();
