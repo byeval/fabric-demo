@@ -21,6 +21,9 @@ export function drawRectangle(app) {
       angle: 0,
       fill: "rgba(255,0,0,0.5)",
       transparentCorners: false,
+      // radius
+      rx: 20,
+      ry: 20,
     });
     canvas.add(rect);
   });
